@@ -207,6 +207,19 @@
             <br>
             The information you provide us will be treated in the strictest confidence and may be used for improving our service delivery purposes. A copy of the completed form will be automatically sent to the email address supplied.
           </p>
+          <form action="/submit_feedback" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            
+            <label for="feedback">Your Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Submit Feedback">
+          </form>
         </div>
     </section>
     <footer class="footer">
