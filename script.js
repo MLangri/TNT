@@ -24,5 +24,15 @@ btnHamburger.addEventListener('click', function(){
       element.classList.add('fade-in');
     });
 
-  }  
+  }
+  // Initialize Swiper
+var swiper = new Swiper('.swipe-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  // If you have navigation buttons
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
