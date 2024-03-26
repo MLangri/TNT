@@ -23,21 +23,19 @@
   <body>
     <div class="container-xxl position-relative p-0">
       <nav class="nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.px-4.px-lg-5.py-3 py-lg-0">
-        
+        <a href="/" class="header__logo">
+          <img src=PICS/TNT-Logo.png />
+        </a>
       </nav>
     </div>
     <header class="header">
       <div class="overlay has-fade"></div>
 
       <nav class="container container--pall flex flex-jc-sb flex-ai-c">
-        <a href="/" class="header__logo">
-          <img src=PICS/TNT-Logo.png />
-        </a>
+        
 
-        <button id="btnHamburger" href="#" class="header__toggle hide-for-desktop" type="submit">
+        <button class="navbar-toggler" type="submit">
           <span>fa fa-bars</span>
-          <span></span>
-          <span></span>
         </button>
 
         <div class="header__links hide-for-mobile">
@@ -47,14 +45,14 @@
         <a href="#" class="button header__cta hide-for-mobile">Order</a>
       </nav>
 
-      <div class="header__menu has-fade">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
         <a href="#home" class="nav-item navv-link active">Home</a>
-        <a href="#about" class="">About</a>
-        <a href="#menu" class="">Menu</a>
-        <a href="#careers" class="">Careers</a>
-        <a href="#contact" class="">Contact</a>
-        <a href="#feedback" class="">Feedback</a>
-        <a href="#feedback" class="">Book a Table</a>
+        <a href="#about" class="nav-item navv-link active">About</a>
+        <a href="#menu" class="nav-item navv-link active">Menu</a>
+        <a href="#careers" class="nav-item navv-link active">Careers</a>
+        <a href="#contact" class="nav-item navv-link active">Contact</a>
+        <a href="#feedback" class="nav-item navv-link active">Feedback</a>
+        <a href="#feedback" class="nav-item navv-link active">Book a Table</a>
       </div>
     </header>
 
