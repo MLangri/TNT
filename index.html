@@ -1,335 +1,1283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href=style.css/>
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <title>The Nouveau Table</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="overlay has-fade"></div>
 
-      <nav class="container container--pall flex flex-jc-sb flex-ai-c">
-        <a href="/" class="header__logo">
-          <img src=PICS/TNT-Logo.png />
-        </a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
+  <!-- 
+    - primary meta tags
+  -->
+  <title>The Nouveau Table - Amazing & Delicious Food</title>
+  <meta name="title" content="Grilli - Amazing & Delicious Food">
+  <meta name="description" content="This is a Restaurant html template made by MLangri">
 
-        <div class="header__links hide-for-mobile">
-          <a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#careers">Careers</a><a href="#contact">Contact</a><a href="#feedback">Feedback</a><a href="#book a table">Book A Table</a>
-        </div>
-        <div class="header__menu has-fade">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#careers">Careers</a>
-        <a href="#contact">Contact</a>
-        <a href="#feedback">Feedback</a>
-      </div>
-        <a href="#book a table btn" class="button hero__cta">Book A Table</a>
-      </nav>
-      <div class="container-xxl py-5 bg-dark hero-header nb-5">
-        <div class="container my-5 py-5">
-          <div class="row align-items-cnter g-5">
-            <div class="col-lg-6 text-center text-lg-start">
-              <h1></h1>
-            </div>
-            
-          </div>
-          
-        </div>
-        
-      </div>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-      
-    </header>
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
 
-    <section class="hero">
-      <div class="container">
-        <div class="hero__text container--pall" id="home">
-          <h1>WELCOME</h1>
-          <p><b>
-            The Nouveau Table is a modern, fast-casual restaurant that serves
-            up healthy, delicious meals made from the freshest ingredients.
-          </b></p>
-        </div>
-        <br>
-      </div>
-    </section>
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
 
-    <section class="Feature">
-      <div class="feature__content container container--pall">
-        <div class="feature__intro" id="about">
-          <h2>Why choose The Nouveau Table?</h2>
-          <p><b>
-            Nestled in Nairobi's Kilimani area, The Nouveau Table exudes vintage charm, inviting patrons to a culinary journey back in time. This quaint restaurant prides itself on serving farm-fresh ingredients and scratch-made delicacies, reminiscent of a bygone era. Stepping through its doors, guests are greeted with the aroma of wholesome cooking and the warmth of rustic décor. From hearty soups to artisanal bread, each dish celebrates simplicity and quality. The Nouveau Table is more than just a restaurant; it's a welcoming haven where guests can enjoy delicious meals made from scratch in a cozy setting that pays homage to the timeless art of cooking.
-          </b></p>
-        </div>
-    </section>
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="PICS/pexels-julian-jagtenberg-103124.jpg">
+  <link rel="preload" as="image" href="PICS/pexels-kübra-doğu-9513591.jpg">
+  <link rel="preload" as="image" href="PICS/pexels-malidate-van-769289.jpg">
+  <link rel="preload" as="image" href="PICS/pexels-julian-jagtenberg-103124.jpg">
 
-    <section class="articles">
-      <div class="article__content container container--pall" id="menu">
-        <h2>MENU</h2>
+</head>
 
-        <div class="article__grid">
-          <a href="#breakfast" class="article__item">
-            <div
-              class="article__image"
-              style="background-image: url('PICS/pexels-rama-khandkar-2113556.jpg')"
-            ></div>
-            <div class="article__text">
-              <div class="article__title">
-                BREAKFAST
-              </div>
-              <div class="article__description">
-                Indulge in the morning with our Breakfast Special, featuring fluffy pancakes served with locally sourced honey and a side of seasonal fruits. For a heartier option, try our Farmhouse Omelette, filled with fresh vegetables and topped with melted cheese. Pair your meal with a steaming cup of freshly brewed coffee or a revitalizing fruit smoothie to kickstart your day.
-              </div>
-              <br>
-              <div><a href="#breakfastbtn" class="button hero__cta">Order</a></div>
-              <br>
-            </div>
-          </a>
-          
+<body id="top">
 
-          <!---<a href="#breakfast__omelette" class="article__item">
-            <div class="article__image" style="background-image: url('')"></div>
-            <div class="article__text">
-              <div class="article__title">
-                OMELETTE
-              </div>
-              <div class="article__description">
-                Explore our delicious omelette options, made with farm-fresh eggs and a variety of fillings. Choose from classic combinations like ham and cheese or create your own custom omelette with your favorite ingredients. Served with a side of crispy hash browns or toast, it's the perfect way to start your day.
-              </div>
-            </div>
-          </a>-->
+  <!-- 
+    - #PRELOADER
+  -->
 
-          <a href="#lunch" class="article__item">
-            <div
-              class="article__image"
-              style="background-image: url('PICS/pexels-robin-stickel-70497.jpg')"
-            ></div>
-            <div class="article__text">
-              <div class="article__title">
-                LUNCH
-              </div>
-              <div class="article__description">
-                Our Lunch menu offers a delightful array of options to satisfy your midday cravings. Enjoy our Grilled Chicken Caesar Salad, made with crisp lettuce, juicy grilled chicken breast, parmesan cheese, and homemade Caesar dressing. For something more substantial, savor our Classic Beef Burger, served with hand-cut fries and a tangy house-made dipping sauce. Don't forget to explore our daily soup specials for a comforting bowl of warmth.
-              </div>
-            </div>
-            <a href="#lunchbtn" class="button hero__cta">Order</a>
-          </a>
-
-          <a href="#dinner" class="article__item">
-            <div
-              class="article__image"
-              style="background-image: url('PICS/pexels-anthony-leong-2092906.jpg')"
-            ></div>
-            <div class="article__text">
-              <div class="article__title">
-                DINNER
-              </div>
-              <div class="article__description">
-                As the sun sets, treat yourself to a memorable dining experience with our Dinner selections. Begin your evening with our Chef's Special Appetizer Platter, featuring a medley of artisanal cheeses, cured meats, and house-made dips. For the main course, indulge in our Pan-Seared Salmon, perfectly seasoned and served with a side of roasted vegetables and herb-infused quinoa. Finish your meal on a sweet note with our decadent Chocolate Lava Cake, accompanied by a scoop of creamy vanilla ice cream.
-              </div>
-            </div>
-            <a href="#dinnerbtn" class="button hero__cta">Order</a>
-          </a>
-
-          <a href="#dessert" class="article__item">
-            <div
-              class="article__image"
-              style="background-image: url('PICS/pexels-photo-1126359.jpeg')"
-            ></div>
-            <div class="article__text">
-              <div class="article__title">
-                DESSERT
-              </div>
-              <div class="article__description">
-                Delight in our Classic Tiramisu, layered with espresso-soaked ladyfingers and creamy mascarpone cheese, dusted with cocoa powder. For a lighter option, try our Fresh Fruit Tart, featuring a buttery pastry crust filled with vanilla pastry cream and topped with an assortment of seasonal fruits. Indulge your sweet tooth and savor the perfect ending to your dining experience at The Nouveau Table
-              </div>
-            </div>
-            <a href="#dessertbtn" class="button hero__cta">Order</a>
-          </a>
-
-          <a href="#drinks" class="article__item">
-            <div
-              class="article__image"
-              style="background-image: url('PICS/pexels-photo-16148201.jpeg')"
-            ></div>
-            <div class="article__text">
-              <div class="article__title">
-                DRINKS
-              </div>
-              <div class="article__description">
-                Indulge in our handcrafted cocktail selection, expertly curated to tantalize your taste buds and elevate your experience. From timeless classics to innovative creations, each cocktail on our menu is crafted with precision and passion, using only the finest spirits, fresh ingredients, and artisanal garnishes. Whether you're in the mood for something light and refreshing, bold and adventurous, or sweet and indulgent, our menu offers something for every palate. Join us and embark on a journey of flavor and discovery as you sip your way through our carefully crafted cocktail creations.
-              </div>
-            </div>
-            <a href="#drinksbtn" class="button hero__cta">Order</a>
-          </a>
-
-          <a href="#wines" class="article__item">
-            <div
-              class="article__image"
-              style="background-image: url('PICS/pexels-photo-2702805.webp')"
-            ></div>
-            <div class="article__text">
-              <div class="article__title">
-                WINES
-              </div>
-              <div class="article__description">
-               Explore our thoughtfully curated wine selection, showcasing a diverse range of varietals and regions from around the world. From crisp and refreshing whites to rich and velvety reds, each wine on our menu is selected for its exceptional quality, distinctive character, and ability to complement our culinary offerings. Whether you're a seasoned oenophile or a casual wine enthusiast, our menu offers something to satisfy every palate and occasion. Sit back, relax, and allow our knowledgeable staff to guide you through a memorable wine experience as you discover new favorites and old classics alike. Cheers to the perfect pairing! 
-              </div>
-            </div>
-            <a href="#winesbtn" class="button hero__cta">Order</a>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="Feature">
-      <div class="feature__content container container--pall">
-        <div class="feature__intro" id="careers">
-          <div class="hero__image">
-          <img src=PICS/pexels-photo-265152.jpeg />
-        </div>
-      <h2><b><i>CAREERS</i></b></h2><br><br>
-      <h3><b>JOIN THE CREW</b></h3>
-          <p>
-            Join our dynamic team and embark on an exciting culinary journey with us at The Nouveau Table! We are dedicated to creating memorable dining experiences for our guests, and we believe that starts with our passionate and talented team members.
-            <br>
-            <br>
-            Whether you're a seasoned hospitality professional or just starting your career in the industry, we welcome individuals who are enthusiastic, hardworking, and committed to delivering exceptional service. At TNT, you'll have the opportunity to work in a collaborative and supportive environment, where your creativity, skills, and dedication are valued and rewarded.
-            <br>
-            <br>
-            Join us in creating moments of joy and satisfaction for our guests, and let's write the next chapter of success together. Explore rewarding career opportunities and apply to join our team today!
-            <br>
-            <br>
-            To join our team send your cv, certificate of good conduct and application letter to our career e-mail. Best of luck ;)
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="Feature">
-      <div class="feature__content container container--pall">
-        <div class="feature__intro" id="contact">
-          <div class="hero__image">
-          <img src=PICS/pexels-photo.webp />
-        </div>
-          <h2><b><i>CONTACTS</i></b></h2>
-          <br>
-          <p>Website: <a href="https://mlangri.github.io/TNT/#">The Nouveau Table</a></p>
-          <p>Email: <a href="mailto:info.tnt@gmail.com.org">info.tnt@gmail.com</a></p>
-          <p>Careers Email: <a href="mailto:careers.tnt@gmail.com.org">careers.tnt@gmail.com</a></p>
-          <p>Phone: <a href="tel:+254 100000000">+254 100000000 </a></p>
-        </div>
-      </div>
-    </section>
-        <section class="Feature">
-      <div class="feature__content container container--pall">
-        <div class="feature__intro" id="feedback">
-          <div class="hero__image">
-          <img src=PICS/pexels-photo-6935078.jpeg />
-        </div>
-          <h2><b><i>FEEDBACK</i></b></h2>
-          <br>
-          <p>
-            We'd love to hear your feedback; good or bad. If we didn't make you feel special, we'd like to make it up to you. Please let us know what happened during your visit and we'll get in touch with you soon.
-            <br>
-            <br>
-            Click the link below to go to our google feedback form.
-            <br>
-            <a href="https://docs.google.com/forms/d/1PBkdKFX_rFGIh6qN4jF6cAVIrNLrT1Zb9GuxTYL7kBE/viewform" target="_blank">The Nouveau Table Feedback Form</a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <a class="footer__logo" href="#">
-          <img src="PICS/TNT-Logo.pn" />
-        </a>
-
-        <div class="footer__social" id="contact">
-          <a href="#">
-            <svg xmlns="" width="20" height="20">
-              <title>Facebook</title>
-              <path
-                fill="#FFF"
-                d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="" width="21" height="20">
-              <title>YouTube</title>
-              <path
-                fill="#FFF"
-                d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="" width="21" height="18">
-              <title>Twitter</title>
-              <path
-                fill="#FFF"
-                d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="" width="21" height="20">
-              <title>Instagram</title>
-              <path
-                fill="#FFF"
-                d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <div class="footer__links col1">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#menu">Menu</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <div class="footer__links col2">
-          <a href="#careers">Careers</a>
-          <a href="#feedback">Feedback</a>
-        </div>
-
-        <div class="footer__cta">
-          <a href="#" class="button">Order</a>
-        </div>
-
-        <div class="footer__copyright">
-          &copy; The Nouveau Table. All Rights Reserved.
-        </div>
-      </div>
-    </footer>
-
-    <script src="/script.js"></script>
-  </body>
-  <!-- /*<div class="dropdown" id="dropdown">
-  <button class="dropbtn">Menu</button>
-  <div class="dropdown-content">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Menu</a>
-    <a href="#">Careers</a>
-    <a href="#">Contact</a>
-    <a href="#">Feedback</a>
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">The Nouveau Table</p>
   </div>
-</div>*/-->
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Kilimani St, Kilimani, Nairobi 00-100, KENYA
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 8.00 am to 10.00 pm</span>
+      </div>
+
+      <a href="tel:+254 100000000" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+254 100000000</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:careers.tnt@gmail.com.org" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">careers.tnt@gmail.com</span>
+      </a>
+
+      <a href="mailto:info.tnt@gmail.com.org" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">info.tnt@gmail.com.org</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#home" class="logo">
+        <img src="PICS/TNT-Logo.png" width="160" height="50" alt="The Nouveau Table - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#home" class="logo">
+          <img src="PICS/TNT-Logo.png" width="160" height="50" alt="The Nouveau Table - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">The Amazing Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Kilimani St, Kilimani, <br>Nairobi 00-100, KENYA
+          </address>
+
+          <p class="body-4 navbar-text">Open: 8.00 am - 10.00pm</p>
+
+          <a href="mailto:info.tnt@gmail.com.org" class="body-4 sidebar-link">info.tnt@gmail.com.org</a>
+          <br>
+          <a href="mailto:careers.tnt@gmail.com.org" class="body-4 sidebar-link">careers.tnt@gmail.com.org</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Book A Table</p>
+
+          <a href="tel:+254 100000000" class="body-1 contact-number hover-underline">
+            +254 100000000
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="PICS/pexels-chevanon-photography-323682.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal"></p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Welcome to <br>
+              The Nouveau Table
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              The Nouveau Table is a modern, fast-casual restaurant that serves up healthy, delicious meals made from the freshest ingredients.
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="PICS/pexels-radu-daniel-(-mrd-)-10560861.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">A Delightful Experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & eat mouthwatering food
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="PICS/pexels-pixabay-414555.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Food to soothe the soul
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#book a table" class="hero-btn has-after">
+          <img src="PICS/pexels-cottonbro-studio-4253312.jpg" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Flavors That Dance In Your Mouth</p>
+
+          <h2 class="headline-1 section-title">Quality Cuisine and High End-Food</h2>
+
+          <p class="section-text">
+            Nestled in Nairobi's Kilimani area, The Nouveau Table exudes vintage charm, inviting patrons to a culinary journey back in time. This quaint restaurant prides itself on serving farm-fresh ingredients and scratch-made delicacies, reminiscent of a bygone era. Stepping through its doors, guests are greeted with the aroma of wholesome cooking and the warmth of rustic décor. From hearty soups to artisanal bread, each dish celebrates simplicity and quality. The Nouveau Table is more than just a restaurant; it's a welcoming haven where guests can enjoy delicious meals made from scratch in a cozy setting that pays homage to the timeless art of cooking.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="PICS/pexels-rama-khandkar-2113556.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Breakfast</a>
+                  </h3>
+                  <p class="description">
+                    Indulge in the morning with our Breakfast Special, featuring fluffy pancakes served with locally sourced honey and a side of seasonal fruits. For a heartier option, try our Farmhouse Omelette, filled with fresh vegetables and topped with melted cheese. Pair your meal with a steaming cup of freshly brewed coffee or a revitalizing fruit smoothie to kickstart your day.
+                  </p>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="PICS/pexels-anthony-leong-2092906.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Lunch</a>
+                  </h3>
+                  <p class="description">
+                    Our Lunch menu offers a delightful array of options to satisfy your midday cravings. Enjoy our Grilled Chicken Caesar Salad, made with crisp lettuce, juicy grilled chicken breast, parmesan cheese, and homemade Caesar dressing. For something more substantial, savor our Classic Beef Burger, served with hand-cut fries and a tangy house-made dipping sauce. Don't forget to explore our daily soup specials for a comforting bowl of warmth.
+                  </p>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="PICS/pexels-malidate-van-769289.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Dinner</a>
+                  </h3>
+                  <p class="description">
+                    As the sun sets, treat yourself to a memorable dining experience with our Dinner selections. Begin your evening with our Chef's Special Appetizer Platter, featuring a medley of artisanal cheeses, cured meats, and house-made dips. For the main course, indulge in our Pan-Seared Salmon, perfectly seasoned and served with a side of roasted vegetables and herb-infused quinoa. Finish your meal on a sweet note with our decadent Chocolate Lava Cake, accompanied by a scoop of creamy vanilla ice cream.
+                  </p>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="PICS/pexels-photo-1126359.jpeg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Desserts</a>
+                  </h3>
+                  <p class="description">
+                    Delight in our Classic Tiramisu, layered with espresso-soaked ladyfingers and creamy mascarpone cheese, dusted with cocoa powder. For a lighter option, try our Fresh Fruit Tart, featuring a buttery pastry crust filled with vanilla pastry cream and topped with an assortment of seasonal fruits. Indulge your sweet tooth and savor the perfect ending to your dining experience at The Nouveau Table.
+                  </p>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="PICS/pexels-photo-16148201.jpeg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Drinks</a>
+                  </h3>
+                  <p class="description">
+                    Indulge in our handcrafted cocktail selection, expertly curated to tantalize your taste buds and elevate your experience. From timeless classics to innovative creations, each cocktail on our menu is crafted with precision and passion, using only the finest spirits, fresh ingredients, and artisanal garnishes. Whether you're in the mood for something light and refreshing, bold and adventurous, or sweet and indulgent, our menu offers something for every palate. Join us and embark on a journey of flavor and discovery as you sip your way through our carefully crafted cocktail creations.
+                  </p>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="PICS/pexels-photo-2702805.webp" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Wines</a>
+                  </h3>
+                  <p class="description">
+                    Explore our thoughtfully curated wine selection, showcasing a diverse range of varietals and regions from around the world. From crisp and refreshing whites to rich and velvety reds, each wine on our menu is selected for its exceptional quality, distinctive character, and ability to complement our culinary offerings. Whether you're a seasoned oenophile or a casual wine enthusiast, our menu offers something to satisfy every palate and occasion. Sit back, relax, and allow our knowledgeable staff to guide you through a memorable wine experience as you discover new favorites and old classics alike. Cheers to the perfect pairing!
+                  </p>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="PICS/pexels-pixabay-70842.jpg" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="PICS/pexels-pixabay-70842.jpg" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">Good Food Speaks For Itself</h2>
+
+            <p class="section-text">
+              The Nouveau Table is a modern, fast-casual restaurant that serves up healthy, delicious meals made from the freshest ingredients.Nestled in Nairobi's Kilimani area, The Nouveau Table exudes vintage charm, inviting patrons to a culinary journey back in time. This quaint restaurant prides itself on serving farm-fresh ingredients and scratch-made delicacies, reminiscent of a bygone era. Stepping through its doors, guests are greeted with the aroma of wholesome cooking and the warmth of rustic décor. From hearty soups to artisanal bread, each dish celebrates simplicity and quality. The Nouveau Table is more than just a restaurant; it's a welcoming haven where guests can enjoy delicious meals made from scratch in a cozy setting that pays homage to the timeless art of cooking.
+            </p>
+
+            <div class="contact-label">Book A Table</div>
+
+            <a href="tel:+254 100000000" class="body-1 contact-number hover-underline">+254 100000000</a>
+
+            <a href="#about" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="PICS/pexels-malidate-van-784631.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+          </figure>
+
+          <img src="PICS/pexels-min-an-1482803.jpg" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="PICS/pexels-jane-doan-1099680.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="PICS/pexels-pixabay-461415.jpg" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">Dish Of The Day</p>
+
+            <h2 class="headline-1 section-title"></h2>
+
+            <p class="section-text">
+              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
+              industrys standard dummy text ever since the when an unknown printer took a galley of type.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">$40.00</del>
+
+              <span class="span body-1">$20.00</span>
+            </div>
+
+            <a href="#menu" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="PICS/pexels-lumn-1410235.jpg" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="PICS/pexels-elevate-1267320.jpg" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Meal Of The Day</p>
+
+          <h2 class="headline-1 section-title text-center">Menu</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="PICS/pexels-jill-wellington-257816.jpg" width="25" height="25" loading="lazy" alt="Greek Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Greek Salad</a>
+                    </h3>
+
+                    <span class="badge label-1">Seasonal</span>
+
+                    <span class="span title-2">$25.50</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="PICS/pexels-robin-stickel-70497.jpg" width="25" height="25" loading="lazy" alt="Lasagne"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Lasagne</a>
+                    </h3>
+
+                    <span class="span title-2">$40.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="PICS/pexels-robin-stickel-70497.jpg" width="25" height="25" loading="lazy" alt="Butternut Pumpkin"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Butternut Pumpkin</a>
+                    </h3>
+
+                    <span class="span title-2">$10.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="PICS/pexels-julian-jagtenberg-103124.jpg" width="25" height="25" loading="lazy" alt="Tokusen Wagyu"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Tokusen Wagyu</a>
+                    </h3>
+
+                    <span class="badge label-1">New</span>
+
+                    <span class="span title-2">$39.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="PICS/pexels-josh-kobayashi-4083585.jpg" width="25" height="25" loading="lazy" alt="Olivas Rellenas"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Olivas Rellenas</a>
+                    </h3>
+
+                    <span class="span title-2">$25.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="PICS/pexels-engin-akyurt-1438672.jpg" width="100" height="100" loading="lazy" alt="Opu Fish"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Opu Fish</a>
+                    </h3>
+
+                    <span class="span title-2">$</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            Daily from <span class="span">8:00 am</span> to <span class="span">10:00 pm</span>
+          </p>
+
+          <a href="#menu" class="btn btn-primary">
+            <span class="text text-1">View All Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View Menu</span>
+          </a>
+
+          <img src="PICS/pexels-malidate-van-784631.jpg" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="PICS/pexels-photo-1123260.webp" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('PICS/pexels-elevate-1267697.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            From the moment I walked in, I was greeted with warmth and hospitality. The ambiance was inviting, the service impeccable, and the food... simply outstanding! Each dish was beautifully presented and bursting with flavor. I especially loved the attention to detail in every aspect of the meal. I can't wait to come back!
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="PICS/pexels-thien-binh-17264369.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
+              class="img">
+
+            <p class="label-2 profile-name">Our Outstanding Team</p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+
+              <p class="form-text text-center">
+                Booking a table call <a href="tel:+254 100000000" class="link">+254 100000000</a>
+                or fill out the order form
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 Person</option>
+                    <option value="2-person">2 Person</option>
+                    <option value="3-person">3 Person</option>
+                    <option value="4-person">4 Person</option>
+                    <option value="5-person">5 Person</option>
+                    <option value="6-person">6 Person</option>
+                    <option value="7-person">7 Person</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="08:00am">08 : 00 am</option>
+                    <option value="09:00am">09 : 00 am</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Book A Table</span>
+
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('PICS/pexels-pixabay-461415.jpg')">
+
+              <h2 class="headline-1 text-center">Contact Us</h2>
+
+              <p class="contact-label">Booking Request</p>
+
+              <a href="tel:+254 100000000" class="body-1 contact-number hover-underline">+254 100000000</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Location</p>
+
+              <address class="body-4">
+                Kilimani St,Kilimani, <br>Nairobi 00-100, Kenya
+              </address>
+
+              <p class="contact-label">Lunch Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                12.00 pm - 4.30pm
+              </p>
+
+              <p class="contact-label">Dinner Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                05.00 pm - 10.00pm
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strengths</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="PICS/pexels-elevate-1267320.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Exquisite Culinary Creations</h3>
+
+                <p class="label-1 card-text">At The Nouveau Table, we pride ourselves on crafting exquisite culinary creations that delight the senses. Our menu features a tantalizing array of dishes, expertly prepared using only the finest ingredients. From our signature Breakfast Specials to our decadent Desserts, each dish is a masterpiece of flavor and presentation, sure to leave a lasting impression on your taste buds.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="PICS/pexels-golnar-sabzpoush-rashidi-2530386.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Charming Ambiance</h3>
+
+                <p class="label-1 card-text">Step into The Nouveau Table and experience the charm of a bygone era. Our restaurant exudes vintage charm, with rustic décor and cozy seating areas that invite you to relax and unwind. Whether you're enjoying a romantic dinner for two or catching up with friends over lunch, our warm and inviting ambiance sets the perfect backdrop for any occasion.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="PICS/pexels-pixabay-262978.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Exceptional Service</h3>
+
+                <p class="label-1 card-text">At The Nouveau Table, we believe that exceptional service is key to creating memorable dining experiences. From the moment you walk through our doors, our friendly and attentive staff are dedicated to ensuring your satisfaction. Whether you need recommendations from our menu or special accommodations for dietary restrictions, we go above and beyond to cater to your needs and make you feel welcome.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Commitment to Quality</h3>
+
+                <p class="label-1 card-text">Quality is at the heart of everything we do at The Nouveau Table. We source the freshest ingredients from local suppliers and artisans, ensuring that each dish is of the highest quality. From farm-fresh produce to premium cuts of meat, we spare no expense in delivering an exceptional dining experience. When you choose The Nouveau Table, you can trust that every bite will be a testament to our commitment to excellence.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <!-- <section class="section event bg-black-10" aria-label="event">
+        <div class="container">
+
+          <p class="section-subtitle label-2 text-center">Recent Updates</p>
+
+          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Recipie</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">View Our Blog</span>
+
+            <span class="text text-2" aria-hidden="true">View Our Blog</span>
+          </a>
+
+        </div>
+      </section> -->
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('PICS/pexels-pixabay-277253.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#home" class="logo">
+            <img src="PICS/TNT-Logo.png" width="160" height="50" loading="lazy" alt="The Nouveau Table logo">
+          </a>
+
+          <address class="body-4">
+            Kilimani St, Kilimani, <br>Nairobi 00-100, KENYA
+          </address>
+
+          <a href="tel:+254 10000000" class="body-4 contact-link">Booking Request : +254 10000000</a>
+
+          <p class="body-4">
+            Open : 10:00 am - 04:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div> 
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Amazing Team</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2024 The Nouveau Table. All Rights Reserved | Created by MLangri <a href="https://github.com/MLangri/"
+            target="_blank" class="link">MLangri</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
